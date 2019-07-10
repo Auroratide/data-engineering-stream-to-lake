@@ -138,7 +138,7 @@ Phew, that was a lot! I promise it gets a little easier.
 
 Now we need a database within which to store all our data. DynamoDB will be serving as our data lake. It's just a document-based NoSQL database where we can store text blobs.
 
-1. Go to **(DynamoDB Console)[https://console.aws.amazon.com/dynamodb/]**.
+1. Go to **[DynamoDB Console](https://console.aws.amazon.com/dynamodb/)**.
 2. Click **Create table**.
 3. Name the table `ocean-data`.
 4. Use `eventid` as the **partition key**
@@ -152,7 +152,7 @@ Now we need a database within which to store all our data. DynamoDB will be serv
 
 Time to create our Lambda function! This will take in the raw data from our buoy sources and pump it into the database we just created.
 
-1. Go to **(Lambda Console)[https://console.aws.amazon.com/lambda]**
+1. Go to **[Lambda Console](https://console.aws.amazon.com/lambda)**
 2. Click the **Create function** button.
 3. Use **Author from scratch**.
 4. Name the function `receive-ocean-data`.
@@ -269,7 +269,7 @@ Try activating multiple buoy instances! They should all be able to stream data i
 
 You can verify data has made it into your data lake by going back to the AWS console and checking out the Database.
 
-1. Go to **(DynamoDB Console)[https://console.aws.amazon.com/dynamodb/]**.
+1. Go to **[DynamoDB Console](https://console.aws.amazon.com/dynamodb/)**.
 2. Click **Tables** in the left panel.
 3. Click on your `ocean-data` table.
 4. Go to the **Items** tab.
