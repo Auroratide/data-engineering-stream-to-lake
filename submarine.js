@@ -21,9 +21,9 @@ const varyPH = pH => pH += 0.0001 * (Math.random() - 0.5002) * pH;
 
 const toString = (salinity, pH) => JSON.stringify({
   subid: name,
-  timestamp: new Date().getTime(),
   salinity,
-  pH
+  pH,
+  timestamp: new Date().getTime()
 });
 
 function sendData() {
